@@ -9,7 +9,7 @@ namespace Lesson1
     class Task1
     {
 
-        static void Main(string[] args)
+        public void Perform()
         {
             Console.Write("Имя: ");
             string firstName = Console.ReadLine();
