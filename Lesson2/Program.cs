@@ -10,7 +10,7 @@ namespace Lesson2
     {
         static void Main(string[] args)
         {
-            new Task1().perform();
+            new Task2().Perform();
         }
     }
 }
