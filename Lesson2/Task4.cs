@@ -8,12 +8,12 @@ namespace Lesson2
 {
     class Task4
     {
-        private string user;
+        private string login;
         private string password;
 
         public Task4()
         {
-            user = "root";
+            login = "root";
             password = "GeekBrains";
         }
 
@@ -31,7 +31,7 @@ namespace Lesson2
                 Console.Write("Пароль: ");
                 string password = Console.ReadLine();
 
-                if (IsCorrect(user, password))
+                if (IsCorrect(login, password))
                 {
                     Console.WriteLine("Вы вошли.");
                     break;
@@ -51,7 +51,7 @@ namespace Lesson2
 
         private bool IsCorrect(string user, string password)
         {
-            return this.user.Equals(user) && this.password.Equals(password);
+            return this.login.Equals(user) && this.password.Equals(password);
         }
     }
 }
