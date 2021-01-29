@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Севостьянов Денис
+ * 
+ * Реализовать метод проверки логина и пароля. На вход подается логин и пароль. На выходе истина, если прошел авторизацию, и ложь, если не прошел (Логин: root, Password: GeekBrains).
+ * Используя метод проверки логина и пароля, написать программу: пользователь вводит логин и пароль, программа пропускает его дальше или не пропускает. 
+ * С помощью цикла do while ограничить ввод пароля тремя попытками.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +16,8 @@ namespace Lesson2
 {
     class Task4
     {
-        private string login;
-        private string password;
-
-        public Task4()
-        {
-            login = "root";
-            password = "GeekBrains";
-        }
+        private string login = "root";
+        private string password = "GeekBrains";
 
         public void Perform()
         {

@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Севостьянов Денис 
+ * 
+ * a) Разработать рекурсивный метод, который выводит на экран числа от a до b (a<b);
+ * б) *Разработать рекурсивный метод, который считает сумму чисел от a до b.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +30,7 @@ namespace Lesson2
             Console.ReadKey();
         }
 
-        public void Print(int a, int b)
+        private void Print(int a, int b)
         {
             if (a > b)
                 return;
@@ -32,7 +39,7 @@ namespace Lesson2
             Print(a + 1, b);
         }
 
-        public long Sum(int a, int b)
+        private long Sum(int a, int b)
         {
             if (a > b)
                 return 0;

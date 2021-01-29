@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Севостьянов Денис
+ * 
+ * С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,13 +26,15 @@ namespace Lesson2
                 string input = Console.ReadLine();
                 isNumber = int.TryParse(input, out number);
 
-                if (isNumber && IsPositiveOdd(number))
+                if (!isNumber)
+                    break;
+
+                if (IsPositiveOdd(number))
                     sum += number;
             }
-            while (isNumber && number != 0);
+            while (number != 0);
 
             Console.WriteLine($"Результат: {sum}");
-
             Console.ReadKey();
         }
 

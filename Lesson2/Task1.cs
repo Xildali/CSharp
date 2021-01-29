@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Севостьянов Денис
+ * 
+ * Написать метод, возвращающий минимальное из трех чисел
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +14,7 @@ namespace Lesson2
 {
     class Task1
     {
-        public void perform()
+        public void Perform()
         {
             Random random = new Random();
             int a = random.Next(100);
@@ -17,13 +23,11 @@ namespace Lesson2
 
             int min = Min(a, b, c);
 
-            Console.WriteLine($"Числа: {a} {b} {c}");
-            Console.WriteLine($"Минимальное: {min}");
-
+            Console.WriteLine($"Числа: {a} {b} {c}. Минимальное: {min}.");
             Console.ReadKey();
         }
 
-        public int Min(int a, int b, int c)
+        private int Min(int a, int b, int c)
         {
             int min = a < b ? a : b;
             min = min < c ? min : c;
