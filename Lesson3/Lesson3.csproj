@@ -48,6 +48,7 @@
     <Compile Include="task1\Complex.cs" />
     <Compile Include="task1\ComplexStruct.cs" />
     <Compile Include="task1\Task1.cs" />
+    <Compile Include="task2\Task2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
