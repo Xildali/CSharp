@@ -1,5 +1,6 @@
 ﻿using Lesson3.task1;
 using Lesson3.task2;
+using Lesson3.task3;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Lesson3
     {
         static void Main(string[] args)
         {
-            new Task2().Perform();
+            new Task3().Perform();
         }
     }
 }

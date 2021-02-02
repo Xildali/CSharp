@@ -49,6 +49,8 @@
     <Compile Include="task1\ComplexStruct.cs" />
     <Compile Include="task1\Task1.cs" />
     <Compile Include="task2\Task2.cs" />
+    <Compile Include="task3\RationalFraction.cs" />
+    <Compile Include="task3\Task3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
