@@ -1,4 +1,7 @@
 ﻿using Lesson4.task1;
+using Lesson4.task2;
+using Lesson4.task3;
+using Lesson4.task4;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +14,7 @@ namespace Lesson4
     {
         static void Main(string[] args)
         {
-            new Task1().Perform();
+            new Task4().Perform();
         }
     }
 }

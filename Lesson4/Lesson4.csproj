@@ -43,12 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Reader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="task1\Task1.cs" />
+    <Compile Include="task2\OneArray.cs" />
+    <Compile Include="task2\Task2.cs" />
+    <Compile Include="task3\Account.cs" />
+    <Compile Include="task3\Task3.cs" />
+    <Compile Include="task4\DoubleArray.cs" />
+    <Compile Include="task4\Task4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="task3\accounts.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
