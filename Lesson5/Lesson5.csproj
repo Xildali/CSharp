@@ -48,12 +48,19 @@
     <Compile Include="task1\Task1.cs" />
     <Compile Include="task2\Message.cs" />
     <Compile Include="task2\Task2.cs" />
+    <Compile Include="task3\Task3.cs" />
+    <Compile Include="task4\Task4.cs" />
+    <Compile Include="task5\Task5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="task2\text.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="task4\test.txt" />
+    <Content Include="task5\questions.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
