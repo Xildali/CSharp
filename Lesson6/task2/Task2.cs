@@ -8,8 +8,6 @@
 */
 
 using System;
-using System.Collections.Generic;
-using System.IO;
 
 namespace Lesson6.task2
 {
@@ -45,7 +43,9 @@ namespace Lesson6.task2
         {
             Choice choice = GetChoice();
 
-            double min = Min(choice.Func, choice.A, choice.B, choice.Step);
+            double min;
+            Finder finder = new Finder(choice);
+            finder.Min(out min);
 
             Console.WriteLine($"Минимум функции на заданном отрезке: {min:0.##}");
             Console.ReadKey();
@@ -69,52 +69,6 @@ namespace Lesson6.task2
             double step = double.Parse(tokens[2]);
 
             return new Choice(functions[funcIndex], a, b, step);
-        }
-
-        private double Min(Function func, double a, double b, double step)
-        {
-            SaveFunc("data.bin", func, a, b, step);
-            double min;
-            Load("data.bin", out min);
-
-            return min;
-        }
-
-        private void SaveFunc(string fileName, Function func, double a, double b, double step)
-        {
-            FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write);
-            BinaryWriter bw = new BinaryWriter(fs);
-            double x = a;
-            while (x <= b)
-            {
-                bw.Write(func(x));
-                x += step;
-            }
-
-            bw.Close();
-            fs.Close();
-        }
-        private double[] Load(string fileName, out double min)
-        {
-            List<double> values = new List<double>();
-
-            FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);
-            BinaryReader bw = new BinaryReader(fs);
-
-            min = double.MaxValue;
-            double d;
-
-            for (int i = 0; i < fs.Length / sizeof(double); i++)
-            {
-                d = bw.ReadDouble();
-                values.Add(d);
-                if (d < min) min = d;
-            }
-
-            bw.Close();
-            fs.Close();
-
-            return values.ToArray();
         }
     }
 }
