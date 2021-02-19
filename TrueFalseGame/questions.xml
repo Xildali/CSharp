@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <Text>жираф может вытягивать язык до сорока пяти сантиметров, чтобы сорвать молодые сочные листочки с дерева?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>шея жирафа может достигать двух метров в длину?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>длина спиралевидных рогов у самцов антилоп-куду может достигать одного метра?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>взрослый питон может заглотить некрупного оленя?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>черная мамба — самая быстрая в мире змея, обитающая на суше?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>на протяжении столетий эскимосы путешествовали на санях, в которые запрягали овчарок?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>каша, которую эскимосы обычно варят на завтрак, называется «снежные хлопья»?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>зайцы, обитающие в тундре, — самые маленькие в мире?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>самые высокие и знаменитые пирамиды находятся в Египте в Долине царей под Луксором?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>самая большая пирамида в Египте — это гробница фараона Тутанхамона?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+</ArrayOfQuestion>
